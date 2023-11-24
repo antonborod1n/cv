@@ -1,0 +1,55 @@
+/* COLOR */
+$dark: #47516b;
+$darker: #2e2e48;
+$text: #79819a;
+$bg: #f7f9fc;
+
+/* FONTS */
+%candal-400 {
+  font-family: 'Candal-Regular';
+  font-weight: 400;
+}
+
+%dms-500 {
+  font-family: 'DMSans-Medium';
+  font-weight: 500;
+}
+
+%dms-400 {
+  font-family: 'DMSans-Regular';
+  font-weight: 400;
+}
+
+%outfit-500 {
+  font-family: 'Outfit-Medium';
+  font-weight: 500;
+}
+
+%outfit-600 {
+  font-family: 'Outfit-SemiBold';
+  font-weight: 600;
+}
+
+/* BUTTON */
+%btn-r {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+/* FLEX */
+%f-cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%f-col {
+  display: flex;
+  flex-direction: column;
+}

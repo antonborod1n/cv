@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Candal-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Candal-Regular'), url('../fonts/Candal-Regular.woff2') format('woff2'),
+    url('../fonts/Candal-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('DMSans-Medium'), url('../fonts/DMSans-Medium.woff2') format('woff2'),
+    url('../fonts/DMSans-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('DMSans-Regular'), url('../fonts/DMSans-Regular.woff2') format('woff2'),
+    url('../fonts/DMSans-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit-Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Outfit-Medium'), url('../fonts/Outfit-Medium.woff2') format('woff2'),
+    url('../fonts/Outfit-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Outfit-SemiBold'), url('../fonts/Outfit-SemiBold.woff2') format('woff2'),
+    url('../fonts/Outfit-SemiBold.woff') format('woff');
+  font-display: swap;
+}
