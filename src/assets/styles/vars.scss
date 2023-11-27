@@ -53,3 +53,8 @@ $bg: #f7f9fc;
   display: flex;
   flex-direction: column;
 }
+
+%f-row {
+  display: flex;
+  flex-direction: row;
+}

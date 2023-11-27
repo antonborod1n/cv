@@ -38,13 +38,13 @@ export default {
     <div class="decor">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="10"
-        height="10"
-        viewBox="0 0 10 10"
+        width="21"
+        height="21"
+        viewBox="0 0 21 21"
         fill="none"
       >
         <path
-          d="M4.99999 7.08332C3.8494 7.08332 2.91666 6.15058 2.91666 4.99999C2.91666 3.8494 3.8494 2.91666 4.99999 2.91666C6.15058 2.91666 7.08332 3.8494 7.08332 4.99999C7.08332 6.15058 6.15058 7.08332 4.99999 7.08332Z"
+          d="M10.3671 14.8751C8.04653 14.8751 6.16534 12.9939 6.16534 10.6734C6.16534 8.35283 8.04653 6.47165 10.3671 6.47165C12.6876 6.47165 14.5688 8.35283 14.5688 10.6734C14.5688 12.9939 12.6876 14.8751 10.3671 14.8751Z"
           fill="#5531A7"
         />
       </svg>
@@ -58,14 +58,14 @@ export default {
             <span>{{ item.date }}</span>
             <span>
               <svg
-                width="6"
-                height="7"
-                viewBox="0 0 6 7"
-                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
               >
                 <path
-                  d="M3 5.56666C2.68423 5.29732 2.39155 5.00204 2.125 4.68391C1.725 4.20616 1.25 3.49466 1.25 2.81666C1.24965 2.10855 1.67606 1.47001 2.33027 1.19901C2.98447 0.928014 3.73752 1.07797 4.238 1.57891C4.56712 1.90656 4.75148 2.35226 4.75001 2.81666C4.75001 3.49466 4.275 4.20616 3.875 4.68391C3.60845 5.00204 3.31577 5.29732 3 5.56666ZM3 2.06666C2.73205 2.06666 2.48446 2.20961 2.35048 2.44166C2.21651 2.67371 2.21651 2.95961 2.35048 3.19166C2.48446 3.42371 2.73205 3.56666 3 3.56666C3.41421 3.56666 3.75 3.23088 3.75 2.81666C3.75 2.40245 3.41421 2.06666 3 2.06666Z"
+                  d="M6.52861 11.046C5.89176 10.5028 5.30146 9.90728 4.76388 9.26566C3.95714 8.30212 2.99915 6.86714 2.99915 5.49973C2.99843 4.07158 3.85844 2.78375 5.17787 2.2372C6.49729 1.69064 8.01606 1.99308 9.02545 3.00339C9.68922 3.66421 10.0611 4.56311 10.0581 5.49973C10.0581 6.86714 9.10007 8.30212 8.29334 9.26566C7.75576 9.90728 7.16546 10.5028 6.52861 11.046ZM6.52861 3.9871C5.9882 3.9871 5.48884 4.27541 5.21864 4.74342C4.94843 5.21142 4.94843 5.78803 5.21864 6.25604C5.48884 6.72405 5.9882 7.01236 6.52861 7.01236C7.36401 7.01236 8.04123 6.33513 8.04123 5.49973C8.04123 4.66433 7.36401 3.9871 6.52861 3.9871Z"
                   fill="#79819A"
                 />
               </svg>
@@ -93,23 +93,31 @@ export default {
   .title {
     @extend %outfit-500;
     color: $darker;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.12px;
-    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.242px;
+    margin-bottom: 32px;
+    @media (max-width: 1000px) {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 24px;
+    }
   }
   .decor {
     position: absolute;
     top: 0;
-    left: -32px;
+    left: -64px;
     content: "";
     @extend %f-cc;
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background-color: #fff;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.04) inset,
       0px 6px 24px 0px rgba(0, 0, 0, 0.04), 0px 1px 4px 0px rgba(0, 0, 0, 0.05);
+    @media (max-width: 1000px) {
+      display: none;
+    }
   }
   .inner {
     @extend %f-col;
@@ -117,16 +125,22 @@ export default {
   }
   .item {
     display: flex;
-    gap: 8px;
+    gap: 16px;
     padding: 3px 0 8px 0;
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
   }
   .cercle {
     position: relative;
-    min-width: 3px;
-    height: 3px;
+    min-width: 6px;
+    height: 6px;
     margin: 4px;
     border-radius: 50%;
     background-color: $darker;
+    @media (max-width: 1000px) {
+      display: none;
+    }
     &::before {
       position: absolute;
       top: 10px;
@@ -134,22 +148,21 @@ export default {
       transform: translateX(-50%);
       content: "";
       width: 0.5px;
-      height: 34.75px;
+      height: 34px;
       background-color: $bg;
     }
   }
   .content {
-    width: 120px;
+    width: 240px;
   }
   .date {
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 4px;
     span {
       @extend %dms-400;
-      font-size: 5px;
+      font-size: 10px;
       letter-spacing: 0.05px;
-      margin-bottom: 4px;
     }
     span:nth-child(1) {
       color: $dark;
@@ -157,42 +170,45 @@ export default {
     span:nth-child(2) {
       display: flex;
       align-items: center;
-      gap: 2px;
+      gap: 4px;
       color: $text;
     }
   }
   .top {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
   }
   .img {
-    min-width: 25px;
-    height: 25px;
+    min-width: 50px;
+    height: 50px;
   }
   .box {
     @extend %f-col;
-    gap: 2px;
+    gap: 4px;
   }
   .caption {
     @extend %dms-500;
     color: $darker;
-    font-size: 7px;
-    line-height: 9px;
+    font-size: 14px;
+    line-height: 18px;
   }
   .subtitle {
     @extend %dms-400;
     color: $text;
-    font-size: 6px;
-    line-height: 8px;
-    letter-spacing: 0.06px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.121px;
   }
   .text {
     @extend %dms-400;
-    max-width: 202px;
+    max-width: 410px;
     color: $text;
-    font-size: 5px;
-    letter-spacing: 0.05px;
+    font-size: 12px;
+    letter-spacing: 0.121px;
+    @media (max-width: 1000px) {
+      max-width: 100%;
+    }
   }
 }
 </style>

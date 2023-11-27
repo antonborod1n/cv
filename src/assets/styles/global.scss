@@ -16,7 +16,10 @@ body {
 }
 
 .container {
-  max-width: 642px;
+  max-width: 1308px;
   padding: 0 24px;
   margin: 0 auto;
+  @media (max-width: 1000px) {
+    padding: 0 15px 15px;
+  }
 }

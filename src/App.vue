@@ -2,7 +2,7 @@
 import Aside from "@/components/Aside.vue";
 import Education from "@/components/Education.vue";
 import Experience from "@/components/Experience.vue";
-import Latest from "@/components/Latest.vue";
+import Project from "@/components/Project.vue";
 import Tools from "@/components/Tools.vue";
 import Certificates from "@/components/Certificates.vue";
 </script>
@@ -18,7 +18,7 @@ import Certificates from "@/components/Certificates.vue";
           <Education />
           <Experience />
           <Tools />
-          <Latest />
+          <Project />
           <Certificates />
         </div>
       </div>
@@ -30,26 +30,40 @@ import Certificates from "@/components/Certificates.vue";
 @import "./assets/styles/vars";
 .wrapper {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 363px 1fr;
   grid-template-rows: auto;
-  gap: 32px;
+  gap: 64px;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
 .content {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 36px 24px 36px 16px;
+  gap: 48px;
+  padding: 64px 48px 64px 32px;
+
+  @media (max-width: 1000px) {
+    padding: 0;
+    gap: 24px;
+  }
 
   &::before {
     position: absolute;
-    top: 40px;
+    top: 80px;
     left: 0;
-    transform: translateX(-8px);
+    transform: translateX(-16px);
     content: "";
     width: 0.5px;
     height: 100%;
     background-color: #e2e6ee;
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
   }
 }
 
