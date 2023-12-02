@@ -1,25 +1,10 @@
 <script>
 export default {
-  data() {
-    return {
-      projects: [
-        {
-          logoUrl: "/src/assets/img/logo-figma.png",
-          iconUrl: "/src/assets/img/link1.svg",
-          title: "Marvel Studios Landing Page",
-          descr:
-            "Figma UI Kit usage showcasing demo of Marvel Studios Landing Page.",
-          url: "https//figma.com",
-        },
-        {
-          logoUrl: "/src/assets/img/1.png",
-          iconUrl: "/src/assets/img/link2.svg",
-          title: "Marvel Studios Landing Page",
-          descr: "Personal Portfolio webpage with resume and blog",
-          url: "https://anuragyadav365.github.io",
-        },
-      ],
-    };
+  props: {
+    projects: {
+      type: Object,
+      required: true,
+    },
   },
 };
 </script>
@@ -104,11 +89,16 @@ export default {
       grid-template-rows: repeat(2, 1fr);
     }
   }
+  .item:nth-child(1) {
+    border-radius: 8px 0px 0px 8px;
+  }
+  .item:nth-child(2) {
+    border-radius: 0px 8px 8px 0px;
+  }
   .item {
     @extend %f-col;
     justify-content: space-between;
     padding: 24px;
-    border-radius: 8px 0px 0px 8px;
     background: $bg;
     @media (max-width: 1000px) {
       padding: 12px;
@@ -162,14 +152,10 @@ export default {
   .link {
     @extend %outfit-600;
     color: #516cf7;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 16px;
     text-decoration-line: underline;
     cursor: pointer;
-    @media (max-width: 1000px) {
-      font-size: 12px;
-      line-height: 16px;
-    }
   }
 }
 </style>

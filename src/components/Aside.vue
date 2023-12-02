@@ -5,42 +5,42 @@ export default {
       user: {
         contact: [
           {
-            icon: "/src/assets/img/contacts/mail.svg",
+            icon: "/img/contacts/mail.svg",
             name: "Email",
             subtitle: "antonborodin86@gmail.com",
           },
           {
-            icon: "/src/assets/img/contacts/phone.svg",
+            icon: "/img/contacts/phone.svg",
             name: "Phone",
             subtitle: "+375296054096",
           },
           {
-            icon: "/src/assets/img/contacts/location.svg",
+            icon: "/img/contacts/location.svg",
             name: "Address",
             subtitle: "Belarus, 220046, Minsk, Soltisa str.",
           },
         ],
         social: [
           {
-            icon: "/src/assets/img/social/inst.svg",
+            icon: "/img/social/inst.svg",
             name: "Instagram",
             link: "https://www.instagram.com/antonborod1n/",
             subtitle: "@antonborod1n",
           },
           {
-            icon: "/src/assets/img/social/github.svg",
+            icon: "/img/social/github.svg",
             name: "Github",
             link: "https://github.com/antonborod1n",
             subtitle: "@antonborod1n",
           },
           {
-            icon: "/src/assets/img/social/linkedin.svg",
+            icon: "/img/social/linkedin.svg",
             name: "Linkedin",
             link: "https://www.linkedin.com/in/anton-borodin-437a60196/",
             subtitle: "anton-borodin",
           },
           {
-            icon: "/src/assets/img/social/telegram.svg",
+            icon: "/img/social/telegram.svg",
             name: "Telegram",
             link: "https://t.me/antonborod1n",
             subtitle: "@antonborod1n",
@@ -48,32 +48,32 @@ export default {
         ],
         languages: [
           {
-            icon: "/src/assets/img/languages/russia.svg",
+            icon: "/img/languages/russia.svg",
             title: "Russia",
             level: "Native",
           },
           {
-            icon: "/src/assets/img/languages/uk.svg",
+            icon: "/img/languages/uk.svg",
             title: "English",
             level: "Elementary",
           },
           {
-            icon: "/src/assets/img/languages/belarus.svg",
+            icon: "/img/languages/belarus.svg",
             title: "Belarus",
             level: "Native",
           },
         ],
         hobbies: [
           {
-            icon: "/src/assets/img/hobbies/play.svg",
+            icon: "/img/hobbies/play.svg",
             title: "Gaming",
           },
           {
-            icon: "/src/assets/img/hobbies/earth.svg",
+            icon: "/img/hobbies/earth.svg",
             title: "Travelling",
           },
           {
-            icon: "/src/assets/img/hobbies/brush.svg",
+            icon: "/img/hobbies/brush.svg",
             title: "Sport",
           },
         ],
@@ -100,7 +100,7 @@ export default {
 <template>
   <aside class="aside">
     <div class="info">
-      <img class="avatar" src="../assets/img/ab.jpg" alt="Anton Baradzin" />
+      <img class="avatar" src="/img/ab.jpg" alt="Anton Baradzin" />
       <h1 class="name">Anton Borodin</h1>
       <div class="text">
         I’m a nice fun and friendly person, I’m honest and punctual, I work well

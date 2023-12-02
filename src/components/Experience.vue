@@ -1,34 +1,10 @@
 <script>
 export default {
-  data() {
-    return {
-      experience: [
-        {
-          logoUrl: "/src/assets/img/logo-github.png",
-          company: "Github",
-          subtitle: "Hacktoberfest Contributor",
-          descr:
-            "Contributed 8 PR’s in various open source projects. Great experience and learning alot about working with Github and open-source. Connecting with developers",
-          date: "Jan 2021 - March 2021",
-        },
-        {
-          logoUrl: "/src/assets/img/logo-woc.png",
-          company: "Winter of Code",
-          subtitle: "Contributor",
-          descr:
-            "Overwhelming to be a part of DSC NSEC project - DSC NSEC Algorithms for Winter of Code 2020. First introduction to Git and Github. How github is used by most of the programmers in order to manage the projects.",
-          date: "Jan 2021 - March 2021",
-        },
-        {
-          logoUrl: "/src/assets/img/logo-google.png",
-          company: "Google",
-          subtitle: "30Days of Google Cloud",
-          descr:
-            "Contributed 8 PR’s in various open source projects. Great experience and learning alot about working with Github and open-source. Connecting with developers",
-          date: "Jan 2021 - March 2021",
-        },
-      ],
-    };
+  props: {
+    experience: {
+      type: Object,
+      required: true,
+    },
   },
 };
 </script>
@@ -69,7 +45,7 @@ export default {
                   fill="#79819A"
                 />
               </svg>
-              <span>Online</span>
+              <span>{{ item.location }}</span>
             </span>
           </div>
           <div class="top">
@@ -180,7 +156,7 @@ export default {
     gap: 16px;
   }
   .img {
-    min-width: 50px;
+    width: 50px;
     height: 50px;
   }
   .box {

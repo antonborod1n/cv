@@ -1,28 +1,10 @@
 <script>
 export default {
-  data() {
-    return {
-      certificates: [
-        {
-          logoUrl: "/src/assets/img/logo-udemy.png",
-          title: "Coursera",
-          subtitle: "Kotlin For Java Developers",
-          date: "Dec 2021 - Feb 2022",
-        },
-        {
-          logoUrl: "/src/assets/img/logo-udemy.png",
-          title: "Data Strcture & Algorithms",
-          subtitle: "Google",
-          date: "Mar 2021 - Jun 2021",
-        },
-        {
-          logoUrl: "/src/assets/img/logo-udemy.png",
-          title: "Udemy",
-          subtitle: "Cloud Computing",
-          date: "Jun 2020 - Sept 2020",
-        },
-      ],
-    };
+  props: {
+    certificates: {
+      type: Object,
+      required: true,
+    },
   },
 };
 </script>
@@ -91,6 +73,9 @@ export default {
       display: none;
     }
   }
+  .img {
+    width: 25px;
+  }
   .inner {
     @extend %f-col;
     gap: 8px;
@@ -98,7 +83,7 @@ export default {
   .item {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 20px;
     width: 100%;
     padding: 16px 24px;
     border-radius: 4px 4px 0px 0px;
@@ -120,6 +105,7 @@ export default {
   }
   .subtitle {
     @extend %dms-500;
+    max-width: 500px;
     color: $darker;
     font-size: 16px;
     line-height: 20px;

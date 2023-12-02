@@ -1,28 +1,10 @@
 <script>
 export default {
-  data() {
-    return {
-      education: [
-        {
-          logoUrl: "/src/assets/img/e1.png",
-          name: "Chandigarh University",
-          specialty: "Bachelor in Computer Science Engineering",
-          time: "2020 - 2024",
-        },
-        {
-          logoUrl: "/src/assets/img/e2.png",
-          name: "Chandigarh University",
-          specialty: "Bachelor in Computer Science Engineering",
-          time: "2020 - 2024",
-        },
-        {
-          logoUrl: "/src/assets/img/e3.png",
-          name: "Chandigarh University",
-          specialty: "Bachelor in Computer Science Engineering",
-          time: "2020 - 2024",
-        },
-      ],
-    };
+  props: {
+    education: {
+      type: Object,
+      required: true,
+    },
   },
 };
 </script>
@@ -47,7 +29,6 @@ export default {
     <div class="inner">
       <div class="item" v-for="item in education" :key="item.i">
         <div class="top">
-          <img :src="item.logoUrl" :alt="item.name" />
           <div class="caption">{{ item.name }}</div>
         </div>
         <div class="specialty">{{ item.specialty }}</div>
@@ -93,14 +74,19 @@ export default {
   .inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 8px;
     @media (max-width: 1000px) {
       flex-wrap: wrap;
     }
   }
-  .item {
+  .item:nth-child(1) {
     border-radius: 8px 0px 0px 8px;
+  }
+  .item:nth-child(2) {
+    border-radius: 0px 8px 8px 0px;
+  }
+  .item {
+    width: 50%;
     background-color: $bg;
     padding: 16px 24px;
     @media (max-width: 1000px) {

@@ -1,50 +1,10 @@
 <script>
 export default {
-  data() {
-    return {
-      tools: [
-        {
-          logoUrl: "/src/assets/img/logo-figma.png",
-          title: "Figma",
-          subtitle: "UI Design, prototyping",
-        },
-        {
-          logoUrl: "/src/assets/img/logo-html.png",
-          title: "HTML 5",
-          subtitle: "Structural Design",
-        },
-        {
-          logoUrl: "/src/assets/img/logo-css.png",
-          title: "CSS 3",
-          subtitle: "Style Design",
-        },
-        {
-          logoUrl: "/src/assets/img/logo-figma.png",
-          title: "Figma",
-          subtitle: "UI Design, prototyping",
-        },
-        {
-          logoUrl: "/src/assets/img/logo-html.png",
-          title: "HTML 5",
-          subtitle: "Structural Design",
-        },
-        {
-          logoUrl: "/src/assets/img/logo-css.png",
-          title: "CSS 3",
-          subtitle: "Style Design",
-        },
-        {
-          logoUrl: "/src/assets/img/logo-figma.png",
-          title: "Figma",
-          subtitle: "UI Design, prototyping",
-        },
-        {
-          logoUrl: "/src/assets/img/logo-html.png",
-          title: "HTML 5",
-          subtitle: "Structural Design",
-        },
-      ],
-    };
+  props: {
+    tools: {
+      type: Object,
+      required: true,
+    },
   },
 };
 </script>
