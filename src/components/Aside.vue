@@ -5,16 +5,19 @@ export default {
       user: {
         contact: [
           {
+            id: 1,
             icon: "/img/contacts/mail.svg",
             name: "Email",
             subtitle: "antonborodin86@gmail.com",
           },
           {
+            id: 2,
             icon: "/img/contacts/phone.svg",
             name: "Phone",
             subtitle: "+375296054096",
           },
           {
+            id: 3,
             icon: "/img/contacts/location.svg",
             name: "Address",
             subtitle: "Belarus, 220046, Minsk, Soltisa str.",
@@ -22,24 +25,28 @@ export default {
         ],
         social: [
           {
+            id: 1,
             icon: "/img/social/inst.svg",
             name: "Instagram",
             link: "https://www.instagram.com/antonborod1n/",
             subtitle: "@antonborod1n",
           },
           {
+            id: 2,
             icon: "/img/social/github.svg",
             name: "Github",
             link: "https://github.com/antonborod1n",
             subtitle: "@antonborod1n",
           },
           {
+            id: 3,
             icon: "/img/social/linkedin.svg",
             name: "Linkedin",
             link: "https://www.linkedin.com/in/anton-borodin-437a60196/",
             subtitle: "anton-borodin",
           },
           {
+            id: 4,
             icon: "/img/social/telegram.svg",
             name: "Telegram",
             link: "https://t.me/antonborod1n",
@@ -48,16 +55,19 @@ export default {
         ],
         languages: [
           {
+            id: 1,
             icon: "/img/languages/russia.svg",
             title: "Russia",
             level: "Native",
           },
           {
+            id: 2,
             icon: "/img/languages/uk.svg",
             title: "English",
             level: "Elementary",
           },
           {
+            id: 3,
             icon: "/img/languages/belarus.svg",
             title: "Belarus",
             level: "Native",
@@ -65,28 +75,34 @@ export default {
         ],
         hobbies: [
           {
+            id: 1,
             icon: "/img/hobbies/play.svg",
             title: "Gaming",
           },
           {
+            id: 2,
             icon: "/img/hobbies/earth.svg",
             title: "Travelling",
           },
           {
+            id: 3,
             icon: "/img/hobbies/brush.svg",
             title: "Sport",
           },
         ],
         details: [
           {
+            id: 1,
             subtitle: "Mothers Name:",
             descr: "Pramila Devi",
           },
           {
+            id: 2,
             subtitle: "Fathes Name:",
             descr: "Girish Chandra",
           },
           {
+            id: 3,
             subtitle: "D.O.B. :",
             descr: "10 - 04 - 2004",
           },
@@ -112,7 +128,7 @@ export default {
     </div>
 
     <div class="contact">
-      <div class="item" v-for="item in user.contact" :key="item.i">
+      <div class="item" v-for="item in user.contact" :key="item.id">
         <div class="icon">
           <img :src="item.icon" :alt="item.name" class="img" />
         </div>
@@ -176,7 +192,6 @@ export default {
   gap: 32px;
   padding: 48px;
   background-color: $bg;
-
   @media (max-width: 1000px) {
     padding: 24px;
     gap: 16px;
