@@ -3,8 +3,8 @@ import Aside from "@/components/Aside.vue";
 import Education from "@/components/Education.vue";
 import Experience from "@/components/Experience.vue";
 import Project from "@/components/Project.vue";
-import Tool from "@/components/Tools.vue";
-import Certificates from "@/components/Certificates.vue";
+import Tool from "@/components/Tool.vue";
+import Certificate from "@/components/Certificate.vue";
 
 export default {
   components: {
@@ -13,7 +13,7 @@ export default {
     Experience,
     Project,
     Tool,
-    Certificates,
+    Certificate,
   },
 
   data() {
@@ -257,7 +257,7 @@ export default {
               </div>
               <h2 class="title">Certificates & Awards</h2>
               <div class="inner">
-                <Certificates
+                <Certificate
                   v-for="item in certificates"
                   :key="item.id"
                   :logo-url="item.logoUrl"

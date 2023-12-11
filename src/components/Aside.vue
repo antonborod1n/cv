@@ -144,7 +144,7 @@ export default {
     <div class="socials">
       <div class="title">Socials</div>
 
-      <div class="item" v-for="item in user.social" :key="item.i">
+      <div class="item" v-for="item in user.social" :key="item.id">
         <div class="icon">
           <img :src="item.icon" :alt="item.name" />
         </div>
@@ -160,7 +160,7 @@ export default {
     <div class="languages">
       <div class="title">Languages</div>
 
-      <div class="item" v-for="item in user.languages" :key="item.i">
+      <div class="item" v-for="item in user.languages" :key="item.id">
         <div class="icon">
           <img class="img" :src="item.icon" :alt="item.title" />
         </div>
@@ -174,7 +174,7 @@ export default {
     <div class="hobbies">
       <div class="title">Hobbies & Interests</div>
 
-      <div class="item" v-for="item in user.hobbies" :key="item.i">
+      <div class="item" v-for="item in user.hobbies" :key="item.id">
         <div class="icon">
           <img class="img" :src="item.icon" :alt="item.title" />
         </div>
